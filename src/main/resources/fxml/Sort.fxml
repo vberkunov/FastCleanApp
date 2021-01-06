@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="552.0" prefWidth="609.0" style="-fx-background-color: #d8edea;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.comtrollers.Sort">
+   <children>
+      <ImageView fitHeight="51.0" fitWidth="78.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ardix_logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f1faf9" layoutX="88.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FastClean">
+         <font>
+            <Font name="Ebrima Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button id="main" fx:id="buttonBack" layoutX="88.0" layoutY="79.0" mnemonicParsing="false" onAction="#pressBack" text="Главное меню" />
+      <Button id="inventarization" fx:id="buttonInv" layoutX="184.0" layoutY="79.0" mnemonicParsing="false" onAction="#pressInv" text="Первичная инвентаризация" />
+      <Button id="sorting" fx:id="buttonSort" layoutX="355.0" layoutY="79.0" mnemonicParsing="false" onAction="#pressSort" text="Сортировка" />
+      <GridPane layoutX="14.0" layoutY="159.0" prefHeight="350.0" prefWidth="610.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.39996337890625" minWidth="10.0" prefWidth="171.200048828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="577.1999813079834" minWidth="10.0" prefWidth="339.19999389648433" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.20001220703125" minWidth="10.0" prefWidth="100.80000610351567" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.599981689453124" minHeight="10.0" prefHeight="47.9999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.8000244140625" minHeight="10.0" prefHeight="47.20000610351561" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="88.79999389648438" minHeight="10.0" prefHeight="53.60001831054686" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="textEpc" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EPC" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="50.0" right="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" right="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Размер" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" right="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Табельный номер" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="50.0" right="20.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField  fx:id="textName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Артикул">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Предприятие" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField  fx:id="textOrganization" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Город" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="textCity" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Цех" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField  fx:id="textDepartment" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField  fx:id="textInventarization" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="50.0" right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="art" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="size" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="date" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button id="rfid" fx:id="buttonEpc" layoutX="539.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#pressEpc" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #2145e4" text="RFID" textFill="#f1eff5" />
+      <Text layoutX="65.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подразделения ГО" />
+      <ChoiceBox fx:id="officeDep" layoutX="237.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
